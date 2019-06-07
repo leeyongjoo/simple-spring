@@ -5,7 +5,7 @@
 /* reset */
 html, body{width: 100%;}
 
-body, div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+body, div, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
     margin: 0;
     padding: 0;
 }
@@ -40,32 +40,35 @@ a {
 a:hover, a:active, a:focus {
   text-decoration: none;
 }
-hr {
-  display: none;
-}
+
 table {
     border-spacing: 0;
 }
 
-a:hover{color: #00276f;}
-a:active{color: #000;}
-a:link{color: #000;}
 
 /* index */
 
 #wrap{
-    min-width: 1200px;
-    position: relative;
-    /* min-height: 1000px;*/
+    
 }
 
 header{
-    width: 100%;
-    height: 80px;
-    background-color: white;
-    position: relative;
+   
 }
 
+.nav_logo{
+    width: 15%;
+    float: left;
+}
+
+.nav_area{
+    margin: 0 auto;
+    width: 1300px;
+}
+
+.nav_menu{
+    line-height: 3;
+}
 
 .gnb_area{
     width : 1080px;
@@ -90,8 +93,10 @@ article{
 }
 
 .main_visual{
-    width : 1080px;
+    width : 1300px;
     margin:0 auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .logo_area{
@@ -143,7 +148,7 @@ article{
 
 footer{
     height: 90px;
-    background-color: #555;
+    background-color: #127ba3;
     width: 100%;
     position: relative;
     margin-top: 100px;
@@ -159,7 +164,6 @@ footer{
     color:white;
     display: inline-block;
     width: 70%;
-    vertical-align: middle;
 }
 
 .sns_menu{
@@ -215,14 +219,45 @@ footer{
     font-weight: bold;
 }
 
+.cont_list{
+
+}
+
+.cont_list h2{
+    font-size: 1.65em;
+}
+.cont_list th{
+    text-align: center;
+}
+
+.cont_list td{
+    vertical-align: middle;
+}
+
+.cont_list td p{
+    margin-top: 0.5rem;
+    font-size: 0.95em;
+}
+
+.cont_list img{
+    width: 55%;
+}
+
 .content_list{
     margin-top: 30px;
+}
+
+.content_list li ul{
+    border-bottom: 1px solid #00276f;
+}
+.content_list li ul:hover{
+    background-color: #D9edf7;
 }
 
 .content_list li ul li{
     display: inline-block;
     vertical-align:middle;
-    margin-top: 50px;
+    margin-top: 25px;
     text-align: center;
 }
 
@@ -232,22 +267,55 @@ footer{
 .cont_title{
     width: 41%;
 }
+
+.cont_title h2{
+    font-size: 1.5em;
+}
 .cont_price{
-    width: 18%;
     text-align: center;
     font-weight: bold;
 }
 .cont_score{
-    width: 9%;
     text-align: center;
 }
 
+.btn_submit{
+    margin-top: 25px;
+    text-align: right;
+}
+
 #popup{
-    width:300px; height:175px; background:#fff; color:#000; 
-  position:absolute; top:300px; left:1550px; text-align:center; 
-  border:2px solid #00276f;
+    width: 220px;
+    height: 200px;
+    background: #fff;
+    color: #000;
+    position: absolute;
+    top: 247px;
+    left: 1640px;
+    text-align: center;
+    border: 2px solid #00276f;
 
+}
 
+.page_area{
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+.cpu_price_prediction{
+
+}
+.cpu_price_prediction label{
+    padding-top: 2rem;
+}
+
+.cpu_result{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.prediction_head{
 }
 
 
@@ -261,6 +329,99 @@ footer{
     text-align: center;
 }
 
+.content_view{
+    border-bottom: 1px solid #00276f;
+    padding-bottom: 20px;
+}
+
+.view_title{
+    border-bottom: 1px solid #00276f;
+    padding-bottom: 20px;
+}
+
+.content_view li{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.content_view ul li{
+    display: block;
+    padding-top: 10px;
+    text-align: right;
+}
+
+
+
+.view_img{
+    width: 30%;
+}
+
+.view_img img{
+    width: 100%;
+}
+.view_info{
+    width: 69%;
+}
+.view_info ul{
+    padding-left: 10px;
+}
+.view_price{
+    color:red;
+    font-weight: bold;
+    text-align: right;
+    font-size: 1.3em;
+}
+
+
+/* teams */
+
+.team-effect{
+
+}
+
+.team-effect img{
+    width: 100%;
+}
+
+.team_list{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-grids{
+    margin-left: 73px;
+}
+
+
+/*effectiveness*/
+
+.effectiveness{
+
+}
+
+
+.effectiveness img{
+    width: 50%;
+}
+
+/* function */
+
+
+.function{
+
+}
+
+.function img{
+    width: 40%;
+}
+
+.function hr{
+    margin-top: 25px;
+}
+
+.function h2{
+    margin-bottom: 25px;
+}
 
 /* login */
 
@@ -358,4 +519,20 @@ footer{
 
 .bold{
     font-weight: bold;
+}
+
+.mt10{
+    margin-top: 10px;
+}
+
+.ml10{
+    margin-left: 10px;
+}
+
+.mt3rem{
+    margin-top: 3rem;
+}
+
+.bgwt{
+    background-color: #fff;
 }
