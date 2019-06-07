@@ -118,7 +118,7 @@
 
 					</ul>
 				</div>
-				<!-- <script
+				<script
 					src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 				<script>
         //페이지가 불러 졌을때
@@ -160,7 +160,7 @@
         });
  
     </script>
- -->
+
 
 
 			</section>
