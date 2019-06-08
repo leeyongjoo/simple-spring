@@ -33,9 +33,9 @@
 
 							<li class="nav-item"><a class="nav-link" href="/about/intro">About</a>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="sub1.html">Features</a>
+							<li class="nav-item"><a class="nav-link" href="/list">List</a>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="sub2.html">Features</a>
+							<li class="nav-item"><a class="nav-link" href="/predict">Predict</a>
 							</li>
 							<!--
                         <li class="nav-item">
