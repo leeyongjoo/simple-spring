@@ -12,6 +12,14 @@
 				style="width: 10%;">Search</button>
 		</form>
 		<table class="table table-hover mt3rem cont_list">
+			<thead>
+				<tr>
+					<th scope="col"></th>
+					<th scope="col">제품명</th>
+					<th scope="col">가격</th>
+					<th scope="col">가성비</th>
+				</tr>
+			</thead>
 			<tbody>
 				<tr>
 					<th scope="row"><a href="view.html"><img
