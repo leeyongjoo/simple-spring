@@ -9,8 +9,8 @@
 			<li class="nav-item"><a class="nav-link" href="/about/teams">Teams</a>
 			</li>
 			<li class="nav-item"><a class="nav-link"
-				href="effectiveness.html">effectiveness</a></li>
-			<li class="nav-item"><a class="nav-link" href="fucntion.html">function</a>
+				href="/about/effectiveness">effectiveness</a></li>
+			<li class="nav-item"><a class="nav-link" href="/about/function">function</a>
 			</li>
 		</ul>
 

@@ -2,10 +2,8 @@
 pageEncoding="UTF-8"%>
 <jsp:include page="../includes/header.jsp" />
 <article>
-
 	<section class="main_visual">
 		<jsp:include page="about_nav.jsp" />
-
 		<div class="jumbotron bgwt" style="text-align: center;">
 			<!-- team -->
 			<section class="wthree-row py-md-5 py-4">
@@ -13,7 +11,7 @@ pageEncoding="UTF-8"%>
 					<div class="py-lg-5 bg-pricemain text-center">
 						<h3 class="agile-title text-uppercase"
 							style="color: #00276f; font-size: 3em; font-weight: bold;">
-							<img src="resources/images/concat.png" alt="concat" width="25%"><br>
+							<img src="/resources/images/concat.png" alt="concat" width="25%"><br>
 							TEAM
 						</h3>
 						<span class="w3-line"></span>
@@ -21,7 +19,7 @@ pageEncoding="UTF-8"%>
 					<div class="row py-5 team_list">
 						<div class="col-lg-3 col-sm-6 team-grids">
 							<div class="team-effect">
-								<img src="resources/images/ask.jpg" alt="ask"
+								<img src="/resources/images/ask.jpg" alt="ask"
 									class="img-responsive">
 							</div>
 							<!-- team text -->
@@ -35,7 +33,7 @@ pageEncoding="UTF-8"%>
 						</div>
 						<div class="col-lg-3 col-sm-6 team-grids">
 							<div class="team-effect">
-								<img src="resources/images/lyj.jpg" alt="ask"
+								<img src="/resources/images/lyj.jpg" alt="ask"
 									class="img-responsive">
 							</div>
 							<!-- team text -->
@@ -49,7 +47,7 @@ pageEncoding="UTF-8"%>
 						</div>
 						<div class="col-lg-3 col-sm-6 team-grids">
 							<div class="team-effect">
-								<img src="resources/images/khj.jpg" alt="ask"
+								<img src="/resources/images/khj.jpg" alt="ask"
 									class="img-responsive">
 							</div>
 							<!-- team text -->
@@ -69,3 +67,4 @@ pageEncoding="UTF-8"%>
 		</div>
 	</section>
 </article>
+<jsp:include page="../includes/footer.jsp" />

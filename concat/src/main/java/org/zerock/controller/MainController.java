@@ -19,9 +19,13 @@ public class MainController {
 		return "index";
 	}
 	
-	@RequestMapping(value = "/sub", method = RequestMethod.GET)
+	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String sub(Locale locale, Model model) {
-		return "sub";
+		return "list";
 	}
 	
+	@RequestMapping(value = "/predict", method = RequestMethod.GET)
+	public String predict(Locale locale, Model model) {
+		return "predict";
+	}
 }	
