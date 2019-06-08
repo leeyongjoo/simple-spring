@@ -56,6 +56,9 @@ header{
    
 }
 
+.navbar{
+    z-index: 9999;
+}
 .nav_logo{
     width: 15%;
     float: left;
@@ -89,7 +92,7 @@ header{
 article{
     width: 100%;
     position: relative;
-    min-height: 768px;
+    min-height: 500px;
 }
 
 .main_visual{
@@ -118,7 +121,7 @@ article{
 }
 
 .search_area button{
-    background-color: #00276f;
+    background-color: #127ba3;
     color: white;
     border-radius: 20px;
     width: 100px;
@@ -224,7 +227,8 @@ footer{
 }
 
 .cont_list h2{
-    font-size: 1.65em;
+    font-size: 1.9em;
+    font-weight: bold;
 }
 .cont_list th{
     text-align: center;
@@ -236,7 +240,8 @@ footer{
 
 .cont_list td p{
     margin-top: 0.5rem;
-    font-size: 0.95em;
+    font-size: 1.1em;
+    font-weight: 520;
 }
 
 .cont_list img{
@@ -330,13 +335,14 @@ footer{
 }
 
 .content_view{
-    border-bottom: 1px solid #00276f;
+    border-bottom: 1px solid #127ba3;
     padding-bottom: 20px;
 }
 
 .view_title{
-    border-bottom: 1px solid #00276f;
+    border-bottom: 1px solid #127ba3;
     padding-bottom: 20px;
+    font-weight: bold;
 }
 
 .content_view li{
@@ -357,13 +363,17 @@ footer{
 }
 
 .view_img img{
-    width: 100%;
+    width: 80%;
 }
 .view_info{
     width: 69%;
 }
 .view_info ul{
     padding-left: 10px;
+}
+.view_info table{
+    text-align: center;
+    margin-top: 35px;
 }
 .view_price{
     color:red;
