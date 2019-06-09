@@ -61,21 +61,45 @@
         </header>  
         <article>
             <section class="main_visual">
+                <!-- 0609 추가-->
+                <ul class="nav nav-pills com_menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="sub1.html">CPU</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">VGA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">RAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">메인보드</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SSD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HDD</a>
+                    </li>
+                   
+                </ul>
+                <!-- 0609추가 //-->
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search" style="width:89%;">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit" style="width: 10%;">Search</button>
                 </form>
                 <table class="table table-hover mt3rem cont_list">  
-                    <!-- 190608 추가-->
+                    <!-- 190609 수정-->
                     <thead>
                         <tr>
-                            <th scope="col"></th>
-                            <th scope="col">제품명</th>
-                            <th scope="col">가격</th>
-                            <th scope="col">가성비</th>
+                            <th scope="col" class="com_img"></th>
+                            <th scope="col" class="com_title">제품명</th>
+                            <th scope="col" class="com_price">가격</th>
+                            <th scope="col" class="com_score">가성비</th>
                         </tr>
                     </thead>
-                    <!-- 190608 추가 //-->
+                    <!-- 190609 수정 //-->
                     <tbody>
                         <tr>
                             <th scope="row"><a href="view.html"><img src="resources/images/cpu/ryzen.jpg" alt="ryzen"></a></th>

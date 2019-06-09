@@ -66,7 +66,7 @@ header{
 
 .nav_area{
     margin: 0 auto;
-    width: 1300px;
+    width: 1100px;
 }
 
 .nav_menu{
@@ -96,7 +96,7 @@ article{
 }
 
 .main_visual{
-    width : 1300px;
+    width : 1100px;
     margin:0 auto;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -159,7 +159,7 @@ footer{
 
 .copyright{
     margin: 0 auto;
-    width: 1080px;
+    width: 1100px;
     padding-top: 30px;
 }
 
@@ -227,7 +227,7 @@ footer{
 }
 
 .cont_list h2{
-    font-size: 1.9em;
+    font-size: 1.8em;
     font-weight: bold;
 }
 .cont_list th{
@@ -240,7 +240,7 @@ footer{
 
 .cont_list td p{
     margin-top: 0.5rem;
-    font-size: 1.1em;
+    font-size: 1.0em;
     font-weight: 520;
 }
 
@@ -283,6 +283,24 @@ footer{
 .cont_score{
     text-align: center;
 }
+
+
+.com_img{
+    width: 15%;
+}
+
+.com_title{
+    width: 65%;
+}
+
+.com_price, .com_score{
+    width: 10%;
+}
+
+.com_menu{
+    margin-bottom: 30px;
+}
+
 
 .btn_submit{
     margin-top: 25px;
@@ -399,7 +417,7 @@ footer{
 }
 
 .team-grids{
-    margin-left: 73px;
+    margin-left: 60px;
 }
 
 
@@ -440,14 +458,14 @@ footer{
 }
 
 .container{
-    min-width: 1200px;
+    /* min-width: 1100px;*/
     margin: 0 auto;
 }
 
 .contact-form{
     text-align: center;
     margin-bottom: 40px;
-    width: 1200px;
+    width: 1100px;
     margin:0 auto;
 }
 
