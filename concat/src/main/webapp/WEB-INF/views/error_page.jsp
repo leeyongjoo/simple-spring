@@ -10,6 +10,9 @@
 </head>
 <body>
 
+	<h1>에러 발생!</h1>
+
+	<!-- 
   <h4><c:out value="${exception.getMessage()}"></c:out></h4>
 
   <ul>
@@ -17,6 +20,6 @@
      <li><c:out value="${stack}"></c:out></li>
    </c:forEach>
   </ul>
-
+	 -->
 </body>
 </html>
