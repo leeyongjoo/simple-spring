@@ -120,9 +120,6 @@
 					}
 				}
 				
-					
-				
-				
 				
 				//$(".table tr:contains('" + val + "')").addClass('table-success')
 
