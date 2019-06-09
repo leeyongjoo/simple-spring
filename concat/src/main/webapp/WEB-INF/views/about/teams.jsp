@@ -6,7 +6,7 @@ pageEncoding="UTF-8"%>
 		<jsp:include page="about_nav.jsp" />
 		<div class="jumbotron bgwt" style="text-align: center;">
 			<!-- team -->
-			<section class="wthree-row py-md-5 py-4">
+			<section class="wthree-row py-md-5 py-4" style="padding-bottom: 0rem !important; padding-top: 0rem !important;">
 				<div class="container">
 					<div class="py-lg-5 bg-pricemain text-center">
 						<h3 class="agile-title text-uppercase"

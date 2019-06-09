@@ -8,7 +8,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.zerock.service.CpuService;
+import org.zerock.domain.Criteria;
+import org.zerock.domain.Page;
+import org.zerock.service.ListService;
 
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
@@ -19,27 +21,16 @@ import lombok.extern.log4j.Log4j;
 public class MainController {
 	
 	@Setter(onMethod_ = { @Autowired })
-	private CpuService cpu_service;
+	private ListService cpu_service;
 
 	@RequestMapping(value = "", method = RequestMethod.GET)
-	public String index(Locale locale, Model model) {
+	public String index() {
 		return "index";
 	}
 	
-	@GetMapping("/list")
-	public void list(Model model) {
-		
-		log.info("list");
-//		log.info(service.getList());
-		
-		log.info(cpu_service.getList());
-		model.addAttribute("cpu_list", cpu_service.getList());
-		
-//		return "list";
-	}
 	
 	@RequestMapping(value = "/predict", method = RequestMethod.GET)
-	public String predict(Locale locale, Model model) {
+	public String predict() {
 		return "predict";
 	}
 }	

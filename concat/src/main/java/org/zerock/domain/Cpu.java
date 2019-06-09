@@ -5,7 +5,7 @@ import java.util.Date;
 import lombok.Data;
 
 @Data
-public class CpuVO {
+public class Cpu {
 
     private String name;
     private String manufacturer;

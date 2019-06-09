@@ -6,31 +6,36 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 import lombok.extern.log4j.Log4j;
 
 @Controller
-@RequestMapping("/about/*")
+@RequestMapping("/about")
 @Log4j
 public class AboutController {
 
 	@RequestMapping(value = "/intro", method = RequestMethod.GET)
-	public String intro(Locale locale, Model model) {
-		return "about/intro";
+	public ModelAndView intro(ModelAndView model) {
+		model.setViewName("/about/intro");
+		return model;
 	}
 	
 	@RequestMapping(value = "/teams", method = RequestMethod.GET)
-	public String team(Locale locale, Model model) {
-		return "about/teams";
+	public ModelAndView team(ModelAndView model) {
+		model.setViewName("/about/teams");
+		return model;
 	}
 	
 	@RequestMapping(value = "/effectiveness", method = RequestMethod.GET)
-	public String effectiveness(Locale locale, Model model) {
-		return "about/effectiveness";
+	public ModelAndView effectiveness(ModelAndView model) {
+		model.setViewName("about/effectiveness");
+		return model;
 	}
 	
 	@RequestMapping(value = "/function", method = RequestMethod.GET)
-	public String function(Locale locale, Model model) {
-		return "about/function";
+	public ModelAndView function(ModelAndView model) {
+		model.setViewName("about/function");
+		return model;
 	}
 }	
