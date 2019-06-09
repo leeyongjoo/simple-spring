@@ -1,15 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
 <jsp:include page="includes/header.jsp" />
 
 <article>
 	<section class="main_visual">
-		<form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="text" placeholder="Search"
-				style="width: 89%;">
-			<button class="btn btn-secondary my-2 my-sm-0" type="submit"
+
+		<form class="form-inline my-2 my-lg-0" style="margin: 0 auto; width:100%;">
+
+			<div class="form-group" >
+				<label for="Select1" style="padding:0 20px 0 0;display:inline-block;">검색 기준</label> 
+				<select
+					class="form-control" id="select1" style="margin:0 20px 0 0;">
+					<option>이름</option>
+					<option>스펙</option>
+				</select>
+			</div>
+			<input id="filter" class="form-control form-control-lg" type="text" placeholder="Search" style="width:70%; display:inline-block;">
+				
+			
+			<!-- <button class="btn btn-secondary my-2 my-sm-0" type="submit"
 				style="width: 10%;">Search</button>
+			-->
 		</form>
 		<table class="table table-hover mt3rem cont_list">
 			<thead>
@@ -21,42 +35,33 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<th scope="row"><a href="view.html"><img
-							src="resources/images/cpu/ryzen.jpg" alt="ryzen"></a></th>
-					<td><h2>인텔 코어i7-9세대 9700K(커피레이크-R) (정품)</h2>
-						<p>인텔(소켓1151v2) / 14nm / 옥타(8)코어 / 쓰레드 8개 / 3.60GHz / 12MB /
-							64비트 / 95W / 인텔 UHD 630 / 350MHz / 옵테인</p></td>
-					<td class="cont_price">450,000원</td>
-					<td class="cont_score green score_bold">52%</td>
-				</tr>
-				<tr>
-					<th scope="row"><a href="view.html"><img
-							src="resources/images/cpu/intel.jpg" alt="intel"></a></th>
-					<td><h2>인텔 코어i7-9세대 9700K(커피레이크-R) (정품)</h2>
-						<p>인텔(소켓1151v2) / 14nm / 옥타(8)코어 / 쓰레드 8개 / 3.60GHz / 12MB /
-							64비트 / 95W / 인텔 UHD 630 / 350MHz / 옵테인</p></td>
-					<td class="cont_price">450,000원</td>
-					<td class="cont_score blue score_bold">33%</td>
-				</tr>
-				<tr>
-					<th scope="row"><a href="view.html"><img
-							src="resources/images/cpu/ryzen2.jpg" alt="ryzen"></a></th>
-					<td><h2>인텔 코어i7-9세대 9700K(커피레이크-R) (정품)</h2>
-						<p>인텔(소켓1151v2) / 14nm / 옥타(8)코어 / 쓰레드 8개 / 3.60GHz / 12MB /
-							64비트 / 95W / 인텔 UHD 630 / 350MHz / 옵테인</p></td>
-					<td class="cont_price">450,000원</td>
-					<td class="cont_score red score_bold">12%</td>
-				</tr>
-				<tr>
-					<th scope="row"><a href="view.html"><img
-							src="resources/images/cpu/intel2.jpg" alt="intel"></a></th>
-					<td><h2>인텔 코어i7-9세대 9700K(커피레이크-R) (정품)</h2>
-						<p>인텔(소켓1151v2) / 14nm / 옥타(8)코어 / 쓰레드 8개 / 3.60GHz / 12MB /
-							64비트 / 95W / 인텔 UHD 630 / 350MHz / 옵테인</p></td>
-					<td class="cont_price">450,000원</td>
-					<td class="cont_score red score_bold">6%</td>
-				</tr>
+
+				<c:forEach items="${cpu_list}" var="cpu">
+					<tr>
+						<th scope="row"><a href=""><img src="${cpu.img}"
+								alt="${cpu.name}"></a></th>
+						<td>
+							<h2><c:out value="${cpu.name}" /></h2>
+
+							<p>
+								제조사: <c:out value="${cpu.manufacturer}" />
+								/
+								<c:out value="${cpu.socket}" />
+								/
+								제조 공정: <c:out value="${cpu.nm}" />nm
+								/
+								코어 개수: <c:out value="${cpu.core}" />
+								/
+								쓰레드 개수: <c:out value="${cpu.thread}" />
+								/
+								클럭 속도: <c:out value="${cpu.clock}" />
+							</p>
+						</td>
+						<td class="cont_price"><fmt:formatNumber value="${cpu.price}" pattern="#,###"/>원</td>
+						<td class="cont_score green score_bold">50%</td>
+					</tr>
+				</c:forEach>
+
 
 			</tbody>
 		</table>
@@ -92,4 +97,38 @@
             </div>
         </div>
         -->
+<script src="<c:url value="/resources/js/jquery-1.8.0.min.js"/>"></script>
+<script type="text/javascript">
+	jQuery(function($) {
+		$('#filter').keyup(function(event) {
+			var val = $(this).val();
+			if (val == "") {
+				$('.table tr').show();
+			} else {
+				$('.table tr').hide();
+				
+				if (document.getElementById("select1").value == "이름"){				
+					if($(".table tbody tr h2:contains('" + val + "')").length > 0){
+						$('.table thead tr').show();
+						$(".table tbody tr:contains('" + val + "')").show();
+					}
+				}
+				else if(document.getElementById("select1").value == "스펙"){
+					if($(".table tbody tr p:contains('" + val + "')").length > 0){
+						$('.table thead tr').show();
+						$(".table tbody tr:contains('" + val + "')").show();
+					}
+				}
+				
+					
+				
+				
+				
+				//$(".table tr:contains('" + val + "')").addClass('table-success')
+
+			}
+		});
+	});
+</script>
+
 <%@include file="includes/footer.jsp"%>

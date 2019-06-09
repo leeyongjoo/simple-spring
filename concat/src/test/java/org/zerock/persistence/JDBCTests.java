@@ -24,7 +24,7 @@ public class JDBCTests {
 	public void testConnection() {
 
 		try (Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", 
-				"BOOK_EX",
+				"CONCAT_EX",
 				"1234")) {
 
 			log.info(con);
