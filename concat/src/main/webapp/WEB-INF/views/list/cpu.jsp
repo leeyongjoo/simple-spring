@@ -44,5 +44,3 @@
 </form>
 
 <%@include file="list_bottom.jsp"%>
-
-
