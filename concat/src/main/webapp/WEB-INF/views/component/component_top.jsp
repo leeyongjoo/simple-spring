@@ -8,14 +8,14 @@
 <article>
 	<section class="main_visual">
 		<ul class="nav nav-pills com_menu">
-			<li class="nav-item"><a class="nav-link" href="/list/cpu">CPU</a>
+			<li class="nav-item"><a class="nav-link" href="/cpu">CPU</a>
 			</li>
 
-			<li class="nav-item"><a class="nav-link" href="/list/vga">VGA</a></li>
-			<li class="nav-item"><a class="nav-link" href="/list/ram">RAM</a></li>
-			<li class="nav-item"><a class="nav-link" href="/list/mainboard">메인보드</a></li>
-			<li class="nav-item"><a class="nav-link" href="/list/ssd">SSD</a></li>
-			<li class="nav-item"><a class="nav-link" href="/list/ram">HDD</a></li>
+			<li class="nav-item"><a class="nav-link" href="/vga">VGA</a></li>
+			<li class="nav-item"><a class="nav-link" href="/ram">RAM</a></li>
+			<li class="nav-item"><a class="nav-link" href="/mainboard">메인보드</a></li>
+			<li class="nav-item"><a class="nav-link" href="/ssd">SSD</a></li>
+			<li class="nav-item"><a class="nav-link" href="/ram">HDD</a></li>
 
 		</ul>
 		

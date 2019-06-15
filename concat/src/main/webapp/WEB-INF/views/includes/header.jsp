@@ -32,7 +32,7 @@
 
 					<li class="nav-item"><a class="nav-link" href="/about/intro">About</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="/list/cpu">List</a>
+					<li class="nav-item"><a class="nav-link" href="/cpu">List</a>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="/predict">Predict</a>
 					</li>

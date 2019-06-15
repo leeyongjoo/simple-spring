@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
-<jsp:include page="list_top.jsp" />
+<jsp:include page="component_top.jsp" />
 	<tbody>
 		<c:forEach items="${cpuList}" var="cpu">
 			<tr>
@@ -43,4 +43,4 @@
 	<input type="hidden" name="amount" value="${pageMaker.cri.amount}">
 </form>
 
-<%@include file="list_bottom.jsp"%>
+<%@include file="component_bottom.jsp"%>
