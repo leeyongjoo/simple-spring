@@ -12,7 +12,6 @@ import lombok.extern.log4j.Log4j;
 
 @Controller
 @RequestMapping("/about")
-@Log4j
 public class AboutController {
 
 	@RequestMapping(value = "/intro", method = RequestMethod.GET)

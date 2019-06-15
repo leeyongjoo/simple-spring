@@ -16,7 +16,6 @@ import lombok.extern.log4j.Log4j;
 
 @Controller
 @RequestMapping("/list")
-@Log4j
 public class ListController {
 
 	@Setter(onMethod_ = { @Autowired })

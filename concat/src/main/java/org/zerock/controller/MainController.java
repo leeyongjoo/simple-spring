@@ -17,7 +17,6 @@ import lombok.extern.log4j.Log4j;
 
 @Controller
 @RequestMapping("/")
-@Log4j
 public class MainController {
 	
 	@Setter(onMethod_ = { @Autowired })
