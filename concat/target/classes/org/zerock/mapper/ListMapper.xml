@@ -14,9 +14,9 @@
         rownum rn, name,manufacturer,socket,nm,core,thread,clock,l2,l3,bit,tdp,gpu_name,gpu_core,img,etc,price
       from 
         cpu
-      where rownum $lt;= #{pageNum} * #{amount}
+      where rownum &lt;= #{pageNum} * #{amount}
       )
-      where rn $gt; (#{pageNum} -1) * #{amount}
+      where rn &gt; (#{pageNum} -1) * #{amount}
 		
 	</select>
 	
@@ -35,9 +35,9 @@
         rownum rn, name,manufacturer,ddr,use,count,heatsink,dimm,capacity,clock,img,etc,price
       from 
         ram
-      where rownum $lt;= #{pageNum} * #{amount}
+      where rownum &lt;= #{pageNum} * #{amount}
       )
-      where rn $gt; (#{pageNum} -1) * #{amount}
+      where rn &gt; (#{pageNum} -1) * #{amount}
 	</select>
 	
 	<select id="selectRamTotalCount" resultType="int">
