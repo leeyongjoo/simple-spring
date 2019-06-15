@@ -15,7 +15,7 @@
 			<li class="nav-item"><a class="nav-link" href="/ram">RAM</a></li>
 			<li class="nav-item"><a class="nav-link" href="/mainboard">메인보드</a></li>
 			<li class="nav-item"><a class="nav-link" href="/ssd">SSD</a></li>
-			<li class="nav-item"><a class="nav-link" href="/ram">HDD</a></li>
+			<li class="nav-item"><a class="nav-link" href="/hdd">HDD</a></li>
 
 		</ul>
 		
