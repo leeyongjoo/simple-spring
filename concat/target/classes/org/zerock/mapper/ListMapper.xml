@@ -6,7 +6,6 @@
 	
 	<select id="selectCpuList"
 		resultType="org.zerock.domain.Cpu">
-  <![CDATA[
   select 
     name,manufacturer,socket,nm,core,thread,clock,l2,l3,bit,tdp,gpu_name,gpu_core,img,etc,price
   from 
@@ -15,21 +14,19 @@
         rownum rn, name,manufacturer,socket,nm,core,thread,clock,l2,l3,bit,tdp,gpu_name,gpu_core,img,etc,price
       from 
         cpu
-      where rownum <= #{pageNum} * #{amount}
+      where rownum $lt;= #{pageNum} * #{amount}
       )
-      where rn > (#{pageNum} -1) * #{amount}
-  ]]>
+      where rn $gt; (#{pageNum} -1) * #{amount}
 		
 	</select>
 	
 	<select id="selectCpuTotalCount" resultType="int">
-		select count(*) from cpu
+		select count(1) from cpu
 	</select>
 	
 
 	<select id="selectRamList"
 		resultType="org.zerock.domain.Ram">
-  <![CDATA[
   select 
     name,manufacturer,ddr,use,count,heatsink,dimm,capacity,clock,img,etc,price
   from 
@@ -38,14 +35,13 @@
         rownum rn, name,manufacturer,ddr,use,count,heatsink,dimm,capacity,clock,img,etc,price
       from 
         ram
-      where rownum <= #{pageNum} * #{amount}
+      where rownum $lt;= #{pageNum} * #{amount}
       )
-      where rn > (#{pageNum} -1) * #{amount}
-  ]]>
+      where rn $gt; (#{pageNum} -1) * #{amount}
 	</select>
 	
 	<select id="selectRamTotalCount" resultType="int">
-		select count(*) from ram
+		select count(1) from ram
 	</select>
 
 </mapper>
