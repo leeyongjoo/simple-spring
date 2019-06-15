@@ -14,25 +14,25 @@ import lombok.extern.log4j.Log4j;
 @RequestMapping("/about")
 public class AboutController {
 
-	@RequestMapping(value = "/intro", method = RequestMethod.GET)
+	@RequestMapping(value = "/intro")
 	public ModelAndView intro(ModelAndView model) {
 		model.setViewName("/about/intro");
 		return model;
 	}
 	
-	@RequestMapping(value = "/teams", method = RequestMethod.GET)
+	@RequestMapping(value = "/teams")
 	public ModelAndView team(ModelAndView model) {
 		model.setViewName("/about/teams");
 		return model;
 	}
 	
-	@RequestMapping(value = "/effectiveness", method = RequestMethod.GET)
+	@RequestMapping(value = "/effectiveness")
 	public ModelAndView effectiveness(ModelAndView model) {
 		model.setViewName("about/effectiveness");
 		return model;
 	}
 	
-	@RequestMapping(value = "/function", method = RequestMethod.GET)
+	@RequestMapping(value = "/function")
 	public ModelAndView function(ModelAndView model) {
 		model.setViewName("about/function");
 		return model;
